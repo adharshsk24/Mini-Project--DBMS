@@ -1,0 +1,155 @@
+/* InvoiceForm.css */
+
+.invoice-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #4a4a4a;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Form Elements */
+.form-control,
+.form-select {
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Spacing between Invoice Number and Date */
+.invoice-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.invoice-number,
+.current-date {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0 0.5rem;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+/* Button Styles */
+button {
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+/* Invoice Totals Section */
+.invoice-totals {
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.invoice-totals div {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Table Styling */
+.table {
+  margin-top: 1.5rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: center;
+}
+
+.table th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.table thead th {
+  padding: 1.2rem 0.8rem;
+  text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.table td {
+  font-size: 1rem;
+}
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-title {
+  font-weight: 700;
+  color: #333;
+}
+
+.modal-footer button {
+  font-weight: 600;
+}
+
+/* Additional Styling for Totals Display */
+.invoice-totals div span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .invoice-container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.95rem;
+  }
+}
